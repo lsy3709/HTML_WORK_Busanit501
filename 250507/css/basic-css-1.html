@@ -32,12 +32,28 @@
             /* font-size: 50px;
             text-align: center; */
         }
+
+        /* 클래스 선택자 요소를 이용해서, 꾸미기 작업 
+        1. 설정하고 싶은 태그 요소에 class 라는 속성 이용함. 
+        2. class = 이름 지정, 예시, class="saw"
+        3. 적용은, css 적용하는 방법에서, 2번 째 방법은 일단 사용함. 
+        4. style 태그 안에서, 클래스 선택자를 이용해서 효과 주기. 
+        점(.) 클래스 명으로 사용하기. 
+        */
+        /* css 효과 주는 방법,  
+          선택자 { 효과1, 효과2,... }
+          예시)
+        */
+        .saw {
+            color: blue;
+            font-size: 50px;
+        }
     </style>
     <ol>
         <!-- 인라인으로 css 적용해보기 -->
         <li><a href="1.html" style="color: antiquewhite;">HTML</a></li>
-        <li><a href="2.html">CSS</a></li>
-        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="2.html" class="saw">CSS</a></li>
+        <li><a href="3.html" class="saw">JavaScript</a></li>
     </ol>
 
     <ol>
