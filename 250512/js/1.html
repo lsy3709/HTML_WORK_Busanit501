@@ -26,8 +26,12 @@
     (.) : 닷 연산자, 점 연산자 : 기능 또는 속성을 꺼낸다. -->
     <input type="button" value="night" onclick="
       document.querySelector('body').style.backgroundColor = 'black'
+      document.querySelector('body').style.color='white'
       ">
-    <input type="button" value="day" onclick="">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white'
+       document.querySelector('body').style.color='black'
+      ">
     <div id="grid">
         <ol>
             <li><a href="1.html">HTML</a></li>
