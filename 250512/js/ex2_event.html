@@ -15,8 +15,11 @@
     <!-- 함수를 사용하는 구조 -->
     <input type="button" value="test2-함수이용" onclick="sayHi()">
 
-    <h2>2 자바스크립트에서 element.onclick 직접 할당. </h2>
+    <h2>2 자바스크립트에서 element.onclick 직접 할당. 장점: 코드 분리, 단점: 중복 이벤트 설정 불가 </h2>
     <input type="button" id="btn1" value="Click Me">
+
+    <h2>3 addEventListener() 방식 권장, 강추!!장점: 하나의 요소에 여러 이벤트 등록 가능</h2>
+    <input type="button" id="btn2" value="Click Me2">
     <script>
         //script 태그는 가급적이면, body 태그의 가장 아랫 부분에 작성, 
         // 이유? html 렌더링(화면 그려주는데,) , 자바스크립트 문법이 
@@ -39,6 +42,29 @@
         document.getElementById('btn1').onclick = function () {
             alert("요소에 직접 onclick 붙여서 이벤트 처리하기")
         }
+
+        //방법3, 
+        // document.getElementById('btn2') : 
+        // 특정 요소(버튼,이미지등)를 선택
+        // const 상수명 , 변경 불가하고, 재할당 안됨. 
+        // btn  는 무엇을 담고 있냐? 버튼2를 가리키고 있다. 
+        const btn = document.getElementById('btn2')
+        // 이벤트 적용. 
+        // 기본 문법 btn.addEventListener(액션행위, 실행할 함수)
+        // 액션행위 : 1)
+        // 예시들
+        //         | 이벤트          | 설명             |
+        // | ------------ | -------------- |
+        // | `click`      | 클릭했을 때         |
+        // | `dblclick`   | 더블 클릭했을 때      |
+        // | `mousedown`  | 마우스 버튼을 누를 때   |
+        // | `mouseup`    | 마우스 버튼을 뗄 때    |
+        // | `mouseenter` | 요소 안에 마우스 진입 시 |
+        // | `mouseleave` | 요소에서 마우스가 나갈 때 |
+        // | `mousemove`  | 마우스가 움직일 때     |
+        // btn.addEventListener('click',function(){})
+        btn.addEventListener('click',
+            function () { alert('방법3번째 이벤트 처리') })
     </script>
 </body>
 
