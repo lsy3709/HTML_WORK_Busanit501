@@ -9,6 +9,10 @@
 
 <body>
     <h1>script 태그를 이용한 연습</h1>
+    <!-- show 라는 버튼을 만들어서, 해당 이미지가 보이는 기능 만들기 -->
+    <input type="button" value="hide" onclick="
+    document.querySelector('#sample_img1').style.display = 'none'">
+    <img id="sample_img1" src="/img/test1.jpg" alt="샘플이미지1" width="300px">
     <h2>자바스크립트 문법을 연습 방법, script 태그 사용 가능,
         2번째, 콘솔에서 확인 가능.
         문자열의 내장 기능 중 , .length 속성, 문자열의 갯수 파악.
