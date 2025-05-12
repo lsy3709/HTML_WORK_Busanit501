@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>이벤트 설정 및 적용하는 다양한 방법 </h1>
+    <h2>HTML 태그 내 onXXX 속성 직접정의, 장점: 구현 간단, 단점:가독성, 재사용 안됨 </h2>
+    <!-- 함수를 사용하기 전 구조 -->
+    <input type="button" value="test1" onclick="alert('hi')">
+    <!-- 함수를 사용하는 구조 -->
+    <input type="button" value="test2-함수이용" onclick="sayHi()">
+    <script>
+        //script 태그는 가급적이면, body 태그의 가장 아랫 부분에 작성, 
+        // 이유? html 렌더링(화면 그려주는데,) , 자바스크립트 문법이 
+        // 읽기 전에 먼저 화면에 그려주는게 우선. 그래서, 맨뒤에 작성,
+        // 함수의 기본 정의 , 
+        // function 함수명(매개변수 자리) {
+        //     해당 기능
+        // }
+        function sayHi() {
+            alert('함수 이용한 hi')
+        }
+        // onclick 하는 곳에 함수를 이용함, 
+        // 함수 이용법 : 함수명(), ex) sayHi()
+    </script>
+</body>
+
+</html>
