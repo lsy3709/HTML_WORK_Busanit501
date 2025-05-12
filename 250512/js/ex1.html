@@ -9,9 +9,27 @@
 
 <body>
     <h1>script 태그를 이용한 연습</h1>
+
+    <h2>변수 반대 상수, 대입 연산자 </h2>
+    <script>
+        // 옛날 방식, 
+        var x = 1
+        //요즘 방식, = 등호가 아니라, 대입 연산자, 
+        // 진행 방향은 , 오른쪽에서 왼쪽 방향으로 할당한다. 
+        let x2 = 2
+    </script>
+
+    <h2>문자열:작은 따옴표 또는 큰 따옴표 표기, 숫자 먼저</h2>
+    <!-- ex) "문자열", '문자열' -->
+    <!-- 문자열 마치 객체 처럼 사용이 가능, 
+     '문자열'.  점을 찍어 보면, 많은 기능을 이용할수 있음. 
+      -->
+
     <!-- show 라는 버튼을 만들어서, 해당 이미지가 보이는 기능 만들기 -->
     <input type="button" value="hide" onclick="
     document.querySelector('#sample_img1').style.display = 'none'">
+    <input type="button" value="show" onclick="
+    document.querySelector('#sample_img1').style.display = 'block'">
     <img id="sample_img1" src="/img/test1.jpg" alt="샘플이미지1" width="300px">
     <h2>자바스크립트 문법을 연습 방법, script 태그 사용 가능,
         2번째, 콘솔에서 확인 가능.
