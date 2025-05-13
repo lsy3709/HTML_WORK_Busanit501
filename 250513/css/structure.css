@@ -10,7 +10,7 @@
     /* 박스의 영역은 테두리 포함  */
     box-sizing: border-box;
     /* 순서2, 적용할 요소에 반영하기.  */
-    font-family: "Dongle";
+    /* font-family: "Dongle"; */
 }
 
 a {
@@ -45,4 +45,16 @@ header {
     padding-left: 20px;
 }
 
-#logo h1 {}
+#logo h1 {
+    font-family: "Dongle";
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    /* 텍스트의 그림자 넣기 
+    옵션1, 0 : 가로 오프셋, 텍스트 기준으로 그림자의 수평 위치 조정 양수 : 오른쪽, 음수 : 왼쪽
+    옵션2,-1px : 세로 오프셋 , 텍스트 기준으로 그림자의 수직 위치 조정 양수 : 아래, 음수 : 위로
+    옵션3, 0 : 그림자의 퍼지는 정도(흐림 효과), 0이면 날까롭게, / 값이 커지면 부드럽게 퍼진다 라고 표현
+    옵션4, #222 : 그림자의 색을 지정함, HEX, RGB, RGBA, 
+    */
+    text-shadow: 0 5px 0 #519c33d2;
+}
