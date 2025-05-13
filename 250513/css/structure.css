@@ -109,9 +109,13 @@ nav {
 /* 본문 작업 */
 
 .contents {
+    display: grid;
+    grid-template-columns: 200px 1fr;
     width: 1000px;
     /* 위,아래는 50px 여백 주고, 좌,우 자동 조절 */
-    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
 }
 
 main>section {
@@ -189,4 +193,21 @@ footer {
 #bottomMenu ul li a:visited {
     font-size: 15px;
     color: #666;
+}
+
+/* 사이드바 영역 */
+#sideBar {
+    width: 200px;
+    float: left;
+    padding: 20px;
+    margin-left: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* 그리드를 이용해서, 2분할 했고, 
+section을 div로 감싸서 id article  */
+#article {
+    margin-left: 50px;
 }
