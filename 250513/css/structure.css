@@ -92,6 +92,10 @@ nav {
     1em = 16px 
     1.1em = 16 * 1.1 = 17.6px*/
     font-size: 1.1em;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px 60px;
+
 }
 
 
