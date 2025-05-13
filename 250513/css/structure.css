@@ -58,3 +58,26 @@ header {
     */
     text-shadow: 0 5px 0 #519c33d2;
 }
+
+nav {
+    float: right;
+    width: 900px;
+    height: 100px;
+    padding-top: 40px;
+}
+
+#topMenu {
+    height: 60px;
+}
+
+#topMenu>li {
+    float: left;
+    /* html 요소의 위치를 기준 위치로 설정하는 속성, 
+    요소를 문서 흐름에서 유지하면 자기 자신을 기준으로 
+    이동 할수 있게 설정.  */
+    /* 옵션, top, left, bottom, right , z-index(겹침의 순서, 값이 클수로 위에 배치) */
+    position: relative;
+    /* top: 200px; */
+    /* left: 200px; */
+    /* z-index: 10; */
+}
