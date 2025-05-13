@@ -179,3 +179,14 @@ footer {
     padding: 5px 20px;
     border-right: 1px solid #ddd;
 }
+
+#bottomMenu ul li:last-child {
+    border: none;
+
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+    font-size: 15px;
+    color: #666;
+}
