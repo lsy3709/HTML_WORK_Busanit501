@@ -41,17 +41,23 @@ form {
 }
 
 
-fieldset {
+/* fieldset {
     display: flex;
-    /* flex-direction: column; */
+    
 }
 
 label {
     display: flex;
     flex-direction: column;
-}
+} */
 
 fieldset {
+    display: flex;
+    /* 요소가 많아도 다음 줄로 자동 줄바꿈 */
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
