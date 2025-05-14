@@ -25,3 +25,39 @@ section h3 {
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+/* 헤더 부분 작업 */
+header {
+    width: 100%;
+    height: 100vh;
+    /* 1) 배경 이미지 
+    해당 이미지의 경로를 잡는 속성
+    ../ : 현재 css 파일에서(netflix.css 파일에서), 하나 폴더 위로 이동
+    url(../img/test3.jpg)
+
+    2) 그라데이션 효과  
+    background: linear-gradient([방향], 색상1,색상2,색상3..);
+    [방향]옵션 : top, bottom, left, right, 각도 to right, 45deg
+    색상: 시작 색상, 끝 색상, 중간 색생등 여러 개 지정 가능. 
+    rgba(r,g,b,a):빨,초,파+ 투명도 (0~1)
+    현재 상태는 방향이 없어서, 위/아래 모두 같은 색이고, 
+    결론, 반투명 검정색을 만드는 목적.
+    */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/test3.jpg);
+}
+
+/* 반응형 헤더 부분 작업 */
+
+/* 배너 부분 작업 */
+
+/* 멤버쉽 부분 작업 */
+
+/* 선택 가이드 부분 작업 */
+
+/* 반응형 선택 가이드 부분 작업 */
+
+/* FAQ 부분 작업 */
+
+/* footer 부분 작업 */
+
+/* 반응형 footer 부분 작업 */
