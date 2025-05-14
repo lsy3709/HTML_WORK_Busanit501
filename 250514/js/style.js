@@ -25,4 +25,7 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     // 백틱 `, `문자열을 표기함` 
     output += `출력되는 유저명 : ${formData.get('username')}`
 
+    // 결과를 화면에 표기 하는 부분 연결 
+    document.getElementById('output').textContent = output
+
 })
