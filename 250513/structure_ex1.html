@@ -42,13 +42,21 @@
                     <h2>샘플 보조 제목1</h2>
                     <div class="detail">
                         <img src="/img/test1.jpg" alt="샘플이미지1">
-                        <b>
-                            <p>샘플 설명1 강조</p>
-                        </b>
-                        <p>샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한
-                            여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기
-                            등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에
-                            관한 여러가지 내용을 담기 등....</p>
+                        <div id="detail-content">
+                            <b>
+                                <div id="" class="">
+
+                                </div>
+                                <p>샘플 설명1 강조</p>
+                            </b>
+                            <p>샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에
+                                관한
+                                여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지
+                                내용을 담기
+                                등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플 설명에 관한 여러가지 내용을 담기 등....샘플
+                                설명에
+                                관한 여러가지 내용을 담기 등....</p>
+                        </div>
                     </div>
                     <div class="schedule">
                         <h3>샘플 보조 제목2</h3>
@@ -117,16 +125,38 @@
     <!-- 스크립트 파일 불러오는 위치, 맨밑에 js 파일을 두는 이유?
     먼저, 화면에 렌더링 그림을 먼저 그려줘야 함. 
     뒤에서 천천히 자바스크립트를 읽기,  -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleBtn = document.getElementById('menuToggle');
-            const topMenu = document.getElementById('topMenu');
 
+    <!-- 반복 되는 자바스크립트 파일 내용들은 따로 .js 파일에 
+    이동하고, 해당 파일을 불러와서 사용함. 
+    마치 css와 같은 방식.  -->
+
+    <!-- 결론, 각 작업 공간 분리, 
+    장점) 1) 각 파일의 코드의 길이 줄어듬, 
+    2) 유지 보수가 쉽다. 
+    예를들어) 스타일 수정할려면, css , 
+    무언가 동작을 변경 할 때, js 
+    기본 뼈대를 수정시에 html 가면 됩니다.  
+    1) html 
+    2) css 
+    3) js -->
+
+    <script src="js/structure.js"></script>
+    <!-- <script>
+        // 동작 원리.
+        // 'DOMContentLoaded' : 1번째 매개변수 : 해당 문서가 로드가 되면
+        // , function () { } :2번째 매개변수 : 이 함수가 실행됨. 
+        //
+        document.addEventListener('DOMContentLoaded', function () {
+            // 토글 버튼 요소 가리킴
+            const toggleBtn = document.getElementById('menuToggle');
+            // 탑 메뉴 요소 가리킴
+            const topMenu = document.getElementById('topMenu');
+            // 
             toggleBtn.addEventListener('click', function () {
                 topMenu.classList.toggle('active');
             });
         });
-    </script>
+    </script> -->
 
 </body>
 

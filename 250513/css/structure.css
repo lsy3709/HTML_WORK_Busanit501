@@ -25,6 +25,9 @@ ul {
 #container {
     /* 0 : 위,아래의 마진, auto : 왼쪽,오른쪽 의 마진 -> 화면 중앙 배치 */
     margin: 0 auto;
+
+    /* 변경 , 고정길이로 할 경우, 반응형 시, 폭이 고정이되어서, 작은 화면에서, 
+    계속 가로로 뻗은 상태로 보기 불편함, 그래서, 변경함 */
     /* width: 1200px; */
     width: 100%;
     max-width: 1200px;
@@ -209,6 +212,11 @@ main h3 {
     align-items: flex-start;
 }
 
+#detail-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .detail>img {
     width: 300px;
     max-width: 100%;
@@ -357,7 +365,9 @@ section[id^="headline"].schedule {
     flex: 1;
 }
 
-
+/* 선 기준으로 위에 코드는 큰화면 : pc 화면 1024 px 이상 */
+/* ====================================================================== */
+/* 선 기준으로 아래 코드는 작은 화면 : 태블릿 화면 768 px 이하 */
 @media only screen and (max-width: 768px) {
 
     /* ✅ headline 섹션 내부를 세로 배치로 전환 */
