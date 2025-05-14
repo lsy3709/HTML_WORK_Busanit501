@@ -186,6 +186,45 @@ only screen : 오직 화면만 처리함
 }
 
 /* 배너 부분 작업 */
+.banner-content {
+    border-radius: 6px;
+    background: linear-gradient(to right, #651c3d 0%, #280a2b 60%);
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+
+#banner p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
+
+#banner button {
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.4);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.select-menu {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 24px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.select-menu option {
+    background-color: #2b2b2b;
+    color: #fff;
+}
 
 /* 멤버쉽 부분 작업 */
 
