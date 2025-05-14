@@ -143,7 +143,47 @@ nav button {
     cursor: pointer;
 }
 
-/* 반응형 헤더 부분 작업 */
+/* 반응형 헤더 부분 작업 
+가로 크기가 768px 이하 일 경우의 css
+only screen : 오직 화면만 처리함
+*/
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    .lang {
+        padding: 4px 8px;
+    }
+
+    .header-content {
+        /* 초기값 또는 상속값으로 되돌리는 옵션, 
+        부모로 부터 상속가능하면 상속 받고, 
+        상속 불가하면, 초기값으로 리셋 */
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+    .header-content h2 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .header-content h3 {
+        font-size: 20px;
+
+    }
+
+    .add-email botton {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
 
 /* 배너 부분 작업 */
 
