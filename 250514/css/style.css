@@ -1,0 +1,35 @@
+/* 구글 웹폰트 import  링크 복사, 나눔 펜 스크립트 이용중 */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Pen+Script&display=swap');
+
+/* 전체 배경 및 폰트 설정 */
+body {
+    font-family: "Nanum Pen Script", cursive;
+    margin: 40px;
+    background: #f8f9fa;
+
+    /* 회원 가입 폼을 화면의 정중앙에 배치, flex 이용 */
+    /* 화면 전체 높이  */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* 가로로 가운데 */
+    justify-content: center;
+    /* 세로로 가운데 */
+    align-items: center;
+
+}
+
+/* 폼 스타일  */
+form {
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 400px;
+    border-radius: 8px;
+
+    /* 내용 요소들을 세로 정렬 해보기, flex 이용하기 */
+    display: flex;
+    flex-direction: column;
+    /* 요소들의 가로 세로 간격 */
+    gap: 15px;
+}
