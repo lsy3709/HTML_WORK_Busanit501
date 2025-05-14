@@ -23,9 +23,12 @@ document.getElementById('signupForm').addEventListener('submit', function (e) {
     // x = x + 1 <=> x += 1
 
     // 백틱 `, `문자열을 표기함` 
-    output += `출력되는 유저명 : ${formData.get('username')}`
+    // 1번째 요소, 유저명 가져오기
+    output += `출력되는 유저명 : ${formData.get('username')} \n`
+    // 2번째 요소, 패스워드 가져오기, 
+    output += `출력되는 패스워드 : ${formData.get('password')}\n`
 
-    // 결과를 화면에 표기 하는 부분 연결 
+    // 공통 : 결과를 화면에 표기 하는 부분 연결 
     document.getElementById('output').textContent = output
 
 })
