@@ -44,6 +44,48 @@ header {
     결론, 반투명 검정색을 만드는 목적.
     */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/test3.jpg);
+    background-size: cover;
+    padding: 10px 8%;
+    /* 기준위치를 정함 */
+    position: relative;
+}
+
+nav {
+    display: flex;
+    /* 주축 방향의 가로 정렬 */
+    justify-content: space-between;
+    /* 교차 축 방향의 세로 정렬 */
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+nav .logo {
+    font-size: 32px;
+    color: #db0001;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lang {
+    /* inline-flex : css Flexbox 레이아웃을 적용하면서 
+    요소 자체는 인라인 요소 처럼 취급. 
+    flex : 블록 요소 + css Flexbox 레이아웃을 적용 */
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: transparent;
 }
 
 /* 반응형 헤더 부분 작업 */
