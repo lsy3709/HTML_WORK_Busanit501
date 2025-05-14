@@ -88,6 +88,19 @@ nav button {
     background-color: transparent;
 }
 
+.header-content {
+    /* 절대위치 , header 기준으로 배치  */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* 수직, 수평 가운데 정렬 자주 쓰는 방식 
+    원리: 자기 너비의 50%만큼 왼쪽으로 이동 
+    자기 높이의 50%만큼 위로 이동
+    */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* 반응형 헤더 부분 작업 */
 
 /* 배너 부분 작업 */
