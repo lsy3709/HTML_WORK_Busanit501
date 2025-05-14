@@ -19,6 +19,12 @@ body {
 
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* 폼 스타일  */
 form {
     background: #fff;
