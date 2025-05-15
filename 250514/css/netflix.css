@@ -391,5 +391,64 @@ input:checked + div	input이 체크되었을 때, 바로 뒤의 div를 제어 */
 }
 
 /* footer 부분 작업 */
+footer {
+    padding: 60px 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+
+.footer-content a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.left {
+    flex-basis: 60%;
+}
+
+.center,
+.right {
+    flex-basis: 20%;
+    vertical-align: top;
+}
+
+.col h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.col h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+/* .footer-nav 요소 하위에 li 요소 중에서 
+마지막 요소를 제외한 전체 : 오른쪽 선 생성 */
+.footer-nav li:not(:last-child) {
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.footer-info {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
 
 /* 반응형 footer 부분 작업 */
