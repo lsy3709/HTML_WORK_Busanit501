@@ -200,7 +200,8 @@ only screen : 오직 화면만 처리함
     margin-bottom: 30px;
 }
 
-#banner button {
+#banner button,
+.membership-content button {
     border: 0;
     outline: 0;
     border-radius: 5px;
@@ -227,6 +228,28 @@ only screen : 오직 화면만 처리함
 }
 
 /* 멤버쉽 부분 작업 */
+.membership-content {
+    border-radius: 6px;
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    /* to right : 진행방향, 왼쪽 -> 오른쪽으로
+    rgba(101, 28, 61, 0.9) : 시작 색깔 , 투명도까지 표현
+    0% : 그라디언트의 위치 지정
+    no-repeat : 이미지 반복하지 않음
+    right center : 이미지 위치를 오른쪽 중앙에 정렬 */
+    background: linear-gradient(to right, rgba(101, 28, 61, 0.9) 0%,
+            rgba(40, 10, 43, 0.5) 60%),
+        url(../img/test1.jpg) no-repeat right center;
+    /* 만약, 배경이미지를 가로, 세로 비율 유지해서, 자동 조정
+     표현하고 싶을 경우 */
+    background-size: cover;
+}
+
+.membership-content p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+}
 
 /* 선택 가이드 부분 작업 */
 
