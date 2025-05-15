@@ -310,7 +310,85 @@ only screen : 오직 화면만 처리함
     }
 }
 
+
 /* FAQ 부분 작업 */
+#faq .accordion {
+    width: 100%;
+    max-width: 750px;
+    margin: 60px auto;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    /* 기준위치입니다 */
+    position: relative;
+}
+
+/* 가상요소 : html 수정하지 않고, 시가적인 효과 주기위해서 사용. 
+사용하는 방법 요소 뒤에 (::) 콜론 2개를 붙여서 사용함. 
+::after : 해당 요소의 마지막 부분에 콘텐츠를 추가 가능함. 
+주의사항, 반드시 content 속성이 있어야 동작함. 
+
+::before : 요소 앞쪽에 추가함. 
+*/
+.accordion li label::after {
+    content: '\2b';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #3b3b3b;
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* input[type="radio"] 체크 하면 */
+/* + 바로 다음 형제 요소에 대해서 선택하는 기능. 
+결론, 아래의 선택자의 선택은 
+ accordion 클래스 하위의 라디오 체크가된 
+ 라벨 옆에, 콘텐츠만 가리킴*/
+/* 선택자	설명
+A + B	A 요소 바로 다음에 오는 B 요소
+A ~ B	A 뒤에 오는 모든 형제 B 요소
+:checked	input, radio, checkbox가 선택된 경우
+[type="radio"]	속성 선택자. type이 radio인 요소 대상
+input:checked + div	input이 체크되었을 때, 바로 뒤의 div를 제어 */
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(-135deg);
+}
+
+.newsletter {
+    padding: 20px 10%;
+}
 
 /* footer 부분 작업 */
 
