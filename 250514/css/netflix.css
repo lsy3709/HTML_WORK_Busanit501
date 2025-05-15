@@ -430,6 +430,8 @@ footer {
     margin-bottom: 20px;
 }
 
+
+
 .footer-nav {
     display: flex;
     justify-content: start;
@@ -451,4 +453,53 @@ footer {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.socials {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.socials a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 0.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
 /* 반응형 footer 부분 작업 */
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+
+    .col h2 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .col h3 {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+}
